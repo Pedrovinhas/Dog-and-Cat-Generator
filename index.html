@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Catiorrinho e Catinho </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="cat.svg" type="image/jpg">
+    <link rel="shortcut icon" href="dog.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="img">
+        <img src="dog.svg" alt="Cachorro"> 
+        <img src="cat.svg" alt="Gato" class="cat"> 
+    </div>
+    <div class="container">
+        <div class="left">
+            <p id="cachorro"> Aqui vai estar um cachorro </p>
+        </div>
+
+        <div class="right">
+            <p id="gatinho">aqui vai estar um gatinho</p>
+        </div>
+    </div>
+    <div class="btns">
+        <button id="dog" class="btn">  <span>Get a Dog </span>  </button>
+        <button id="cat" class="btn">  <span>Get a Cat</span> </button>
+    </div>
+    
+    <script src="app.js"> </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".right"), {
+        perspective: 2000
+	});
+    VanillaTilt.init(document.querySelectorAll(".left"), {
+        perspective: 2000
+	});
+</script>
+</body>
+</html>
